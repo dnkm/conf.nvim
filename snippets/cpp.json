@@ -1,0 +1,33 @@
+{
+  "USACO Template": {
+    "prefix": "usaco",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "/**",
+      " * USACO Problem: ${1:ProblemName}",
+      " * YEAR: ${2:year}",
+      " * Problem Number: ${3:num}",
+      " */",
+      "",
+      "void setIO(string name = \"\") {",
+      "    ios_base::sync_with_stdio(0);",
+      "    cin.tie(0);",
+      "    if (name.size()) {",
+      "        freopen((name + \".in\").c_str(), \"r\", stdin);",
+      "        freopen((name + \".out\").c_str(), \"w\", stdout);",
+      "    }",
+      "}",
+      "",
+      "int main() {",
+      "    setIO(\"${4:}\"); // Leave empty for modern USACO (Std I/O)",
+      "    ",
+      "    ${0:// your code here}",
+      "    ",
+      "    return 0;",
+      "}"
+    ],
+    "description": "USACO template with bits/stdc++.h and conditional file IO"
+  }
+}
