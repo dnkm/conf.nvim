@@ -39,5 +39,5 @@ vim.keymap.set("n", "<leader>cx", function()
   local new_buf = vim.api.nvim_get_current_buf()
   vim.api.nvim_buf_set_name(new_buf, buf_name)
   vim.bo[new_buf].buflisted = false
-  vim.cmd("startinsert")
+  -- vim.cmd("startinsert")
 end, { desc = "DK: Compile and run C++ file With INPUT" })
