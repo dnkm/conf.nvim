@@ -21,6 +21,8 @@ vim.keymap.set("n", "<leader>cx", function()
     cmd = string.format("g++ %s -o %s && %s", file, root, root)
   elseif ft == "python" then
     cmd = string.format("python3 %s", file)
+  elseif ft == "java" then
+    cmd = string.format("javac %s && java %s", file, root)
   else
     vim.notify("Unsupported file type for compilation with input", vim.log.levels.ERROR)
     return
